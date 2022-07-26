@@ -3589,8 +3589,8 @@ background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
 }
 @media only screen and (max-width: 1317px) {
   .banner-section {
-    padding-top: 165px;
-    padding-bottom: 90px;
+    padding-top: 65px;
+    padding-bottom: 60px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -3681,36 +3681,13 @@ background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
     display: none;
   }
 }
-.banner-section .banner-social-area {
-  position: absolute;
-  left: 110px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 @media only screen and (max-width: 1317px) {
-  .banner-section .banner-social-area {
+  .banner-social-area {
     display: none;
   }
 }
-.banner-section .banner-social-area::before {
-  position: absolute;
-  content: '';
-  top: -200px;
-  left: 13px;
-  width: 1px;
-  height: 180px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.banner-section .banner-social-area::after {
-  position: absolute;
-  content: '';
-  bottom: -200px;
-  left: 13px;
-  width: 1px;
-  height: 180px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.banner-section .banner-social li a {
+
+.banner-social li a {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -3723,12 +3700,12 @@ background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
   border-radius: 50%;
   transition: all 0.5s;
 }
-.banner-section .banner-social li a:hover {
+.banner-social li a:hover {
   background: #ce1702;
   border: 1px solid #ce1702;
   color: white;
 }
-.banner-section .banner-social li + li {
+.banner-social li + li {
   margin-top: 8px;
 }
 .banner-section .banner-content {
@@ -4326,7 +4303,7 @@ background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
   font-weight: 700;
 }
 .footer-widget p {
-  color: white;
+  color: #ccc;
 }
 
 .footer-list li {
@@ -4341,12 +4318,11 @@ background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
 }
 
 .footer-bottom-area {
-  border: 1px solid #ce1702;
-  border-radius: 20px;
-  background-color: #0f0f0f;
+  border-top: 1px dashed #ce1702;
   position: relative;
   z-index: 9;
-  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media only screen and (max-width: 991px) {
   .footer-bottom-area {
@@ -9612,4 +9588,15 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 
 .banner-social li{
   display: inline-block;
+}
+
+.footer-widget article ol li{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .ptb-80{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
