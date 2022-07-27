@@ -1313,7 +1313,7 @@ h4 a:hover {
 }
 .section-header .sub-title {
   color: #0f0f0f;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
   font-family: "Rajdhani", sans-serif;
@@ -2825,7 +2825,7 @@ section {
 .header-section-one .navbar-collapse .main-menu li a:hover,
 .header-section-one .navbar-collapse .main-menu li a.active {
   background: rgb(254,31,3);
-background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
+  background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
   color: #fff;
 }
 
@@ -7090,7 +7090,9 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 
 .course-download-area {
-  background-color: rgba(220, 187, 135, 0.1);
+  background: rgb(254,31,3);
+  background: linear-gradient(180deg, rgba(254,31,3,1) 0%, rgba(74,10,10,1) 100%);
+  color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   padding: 20px;
@@ -9031,7 +9033,8 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 }
 .single-popular-item .popular-item-content {
   width: calc(100% - 90px);
-  padding-left: 10px;
+  padding-left: 0px;
+  padding-top: 10px;
 }
 .single-popular-item .popular-item-content .title {
   font-size: 16px;
@@ -9592,6 +9595,20 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
 
 .footer-widget article ol li{
   margin-bottom: 20px;
+}
+
+.article-detail__button--buttons-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.article-detail__button--buttons-wrapper .btn--base.btn-red:hover{
+  color: #ce1702 !important;
+}
+
+.article-detail__download-btn .btn--base{
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 @media (max-width: 767px) {
